@@ -2,6 +2,7 @@
   "name": "gopuramfinance",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gopuramfinanceweb.zentexus.com/gopuramfinancewebsite",
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",
     "@react-pdf/renderer": "^3.4.4",

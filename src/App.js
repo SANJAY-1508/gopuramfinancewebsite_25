@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/gopuramfinancewebsite">
         <ToastContainer />
         <Routes>
           <Route path="/" element={<Home />} />
