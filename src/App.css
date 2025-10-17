@@ -3,6 +3,25 @@
   color: #08205a;
   font-family: "regular";
 }
-.gpay {
-  width: 185px;
+
+.blink-card {
+  border: none;
+  border-radius: 10px;
+  animation: blink-bg 2s infinite alternate;
+  color: #000;
+  min-width: 180px;
+}
+@keyframes blink-bg {
+  0% {
+    background-color: red;
+    color: #fff;
+  }
+  50% {
+    background-color: yellow;
+    color: #000;
+  }
+  100% {
+    background-color: red;
+    color: #fff;
+  }
 }
