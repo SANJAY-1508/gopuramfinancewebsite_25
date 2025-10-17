@@ -31,3 +31,14 @@
     color: #fff;
   }
 }
+@media (max-width: 576px) {
+  .appbar-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .appbar-title {
+    font-size: 1.3rem;
+  }
+}

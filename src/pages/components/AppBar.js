@@ -10,7 +10,6 @@ const AppBar = () => {
 
   const API_KEY = "fde38ef2e6c76183b5ada516f86bc435"; // Your key
 
-  // Premium factors for Indian retail (adjust as needed)
   const GOLD_PREMIUM = 1.12; // ~12% for gold
   const SILVER_PREMIUM = 1.23; // ~23% for silver
 
@@ -25,7 +24,6 @@ const AppBar = () => {
         const data = await response.json();
 
         if (data.success) {
-          // Spot prices per oz in INR
           const goldPerOz = parseFloat(
             data.rates.INRXAU || (data.rates.XAU ? 1 / data.rates.XAU : 0)
           );
@@ -33,20 +31,16 @@ const AppBar = () => {
             data.rates.INRXAG || (data.rates.XAG ? 1 / data.rates.XAG : 0)
           );
 
-          // Spot per gram
           const OZS_TO_GRAMS = 31.1035;
           let goldPerGram = (goldPerOz / OZS_TO_GRAMS).toFixed(2);
           let silverPerGram = (silverPerOz / OZS_TO_GRAMS).toFixed(2);
 
-          // Apply Indian retail premium
           goldPerGram = (parseFloat(goldPerGram) * GOLD_PREMIUM).toFixed(2);
           silverPerGram = (parseFloat(silverPerGram) * SILVER_PREMIUM).toFixed(
             2
           );
 
-          // Gold Pawn (8g)
           const goldPerPawn = (parseFloat(goldPerGram) * 8).toFixed(2);
-          // Silver Kg
           const silverPerKg = (parseFloat(silverPerGram) * 1000).toFixed(2);
 
           setRates({
@@ -58,7 +52,6 @@ const AppBar = () => {
         }
       } catch (error) {
         console.error("Error:", error);
-        // Current retail fallback (Oct 17, 2025)
         setRates({
           gold: { perGram: 13277, perPawn: (13277 * 8).toFixed(2) },
           silver: { perGram: 185, perKg: 185000 },
@@ -91,7 +84,13 @@ const AppBar = () => {
     <div className="mark-bg py-2">
       <Container fluid>
         <Row className="align-items-center">
-          <Col lg={2} xs={4} sm={4} className="d-flex align-items-center">
+          {/* Logo */}
+          <Col
+            xs={12}
+            sm={12}
+            lg={2}
+            className="d-flex justify-content-center justify-content-lg-start align-items-center mb-2 mb-lg-0"
+          >
             <img
               src={require("../../assets/logo.jpeg")}
               className="img-fluid gpay"
@@ -99,25 +98,29 @@ const AppBar = () => {
               style={{ maxHeight: "60px" }}
             />
           </Col>
-          <Col lg={8} xs={4} sm={4} className="text-center">
+
+          {/* Heading */}
+          <Col xs={12} sm={12} lg={8} className="text-center my-2 my-lg-0">
             <h4 className="appbar-title">
               💰 கோபுரம் பைனான்ஸ் நகை அடகு கடை 💍
             </h4>
           </Col>
+
+          {/* Gold / Silver Cards */}
           <Col
+            xs={12}
+            sm={12}
             lg={2}
-            xs={4}
-            sm={4}
-            className="d-flex flex-row align-items-end gap-2"
+            className="d-flex justify-content-center justify-content-lg-end gap-2 flex-wrap"
           >
-            <Card className="blink-card text-center">
+            <Card className="blink-card text-center mb-2 mb-lg-0">
               <Card.Body className="p-2">
                 <h6 className="fw-bold text-dark">Gold</h6>
                 <p className="mb-1">1g = ₹{rates.gold.perGram}</p>
                 <p className="mb-0">1 Pawn = ₹{rates.gold.perPawn}</p>
               </Card.Body>
             </Card>
-            {/* <Card className="blink-card text-center">
+            {/* <Card className="blink-card text-center mb-2 mb-lg-0">
               <Card.Body className="p-2">
                 <h6 className="fw-bold text-dark">Silver</h6>
                 <p className="mb-1">1g = ₹{rates.silver.perGram}</p>
