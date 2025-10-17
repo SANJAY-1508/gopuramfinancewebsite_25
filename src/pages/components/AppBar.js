@@ -7,7 +7,7 @@ const AppBar = () => {
       <Container fluid>
         <Row className="align-items-center">
           {/* Left: Logo */}
-          <Col lg={4} xs={4} sm={4} className="d-flex align-items-center">
+          <Col lg={2} xs={4} sm={4} className="d-flex align-items-center">
             <img
               src={require("../../assets/logo.jpeg")}
               className="img-fluid gpay"
@@ -17,12 +17,12 @@ const AppBar = () => {
           </Col>
 
           {/* Center: Tamil Title */}
-          <Col lg={4} xs={4} sm={4} className="text-center">
-            <h4 className="appbar-title">கோபுரம் பைனான்ஸ் </h4>
+          <Col lg={8} xs={4} sm={4} className="text-center">
+            <h4 className="appbar-title">கோபுரம் பைனான்ஸ் நகை அடகு கடை</h4>
           </Col>
 
           {/* Right: Animated Box */}
-          <Col lg={4} xs={4} sm={4} className="d-flex justify-content-end">
+          <Col lg={2} xs={4} sm={4} className="d-flex justify-content-end">
             <Card className="blink-card text-center">
               <Card.Body className="p-2">
                 <p className="mb-1 fw-bold">1 gram = 8000</p>
