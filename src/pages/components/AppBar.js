@@ -18,9 +18,7 @@ const AppBar = () => {
 
           {/* Center: Tamil Title */}
           <Col lg={4} xs={4} sm={4} className="text-center">
-            <h4 className="appbar-title">
-              💰 கோபுரம் பைனான்ஸ் நகை அடகு கடை 💍
-            </h4>
+            <h4 className="appbar-title">கோபுரம் பைனான்ஸ் </h4>
           </Col>
 
           {/* Right: Animated Box */}

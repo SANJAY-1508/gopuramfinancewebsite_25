@@ -3,7 +3,13 @@
   color: #08205a;
   font-family: "regular";
 }
-
+.appbar-title {
+  font-family: "Noto Sans Tamil", "Latha", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  text-shadow: 1px 1px 4px #000;
+}
 .blink-card {
   border: none;
   border-radius: 10px;
