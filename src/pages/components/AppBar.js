@@ -25,9 +25,8 @@ const AppBar = () => {
         const data = await response.json();
 
         if (data.success) {
-          const goldPerOz = parseFloat(
-            data.rates.INRXAU || (data.rates.XAU ? 1 / data.rates.XAU : 0)
-          );
+          // Fixed: Use data.rates.XAU directly (INR per ounce)
+          const goldPerOz = parseFloat(data.rates.XAU || 0);
 
           const OZS_TO_GRAMS = 31.1035;
           let goldPerGram = (goldPerOz / OZS_TO_GRAMS).toFixed(2);
@@ -97,30 +96,27 @@ const AppBar = () => {
             </h4>
           </Col>
 
-          {/* Gold  Card*/}
+          {/* Gold Card */}
           <Col
             xs={12}
             sm={12}
             lg={3}
             className="d-flex justify-content-center justify-content-lg-end gap-2 flex-wrap"
           >
-            <Card className="blink-card text-center mb-2 mb-lg-0">
-              <Card
-                className="blink-card text-center mb-2 mb-lg-0"
-                style={{ cursor: "pointer" }}
-                onClick={() => navigate("/jewelrate")}
-              >
-                <Card.Body className="p-2">
-                  <h6 className="fw-bold ">தங்கம்</h6>
-                  <p className="mb-1 price-heading">
-                    இன்றைய விற்பனை விலை (1 கிராம் )= ₹{rates.gold.perGram}
-                  </p>
-
-                  <p className="mb-0 price-heading">
-                    இன்றைய விற்பனை விலை (1 பவ்ன்) = ₹{rates.gold.perPawn}
-                  </p>
-                </Card.Body>
-              </Card>
+            <Card
+              className="blink-card text-center mb-2 mb-lg-0"
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/jewelrate")}
+            >
+              <Card.Body className="p-2">
+                <h6 className="fw-bold">தங்கம்</h6>
+                <p className="mb-1 price-heading">
+                  இன்றைய விற்பனை விலை (1 கிராம்) = ₹{rates.gold.perGram}
+                </p>
+                <p className="mb-0 price-heading">
+                  இன்றைய விற்பனை விலை (1 பவ்ன்) = ₹{rates.gold.perPawn}
+                </p>
+              </Card.Body>
             </Card>
           </Col>
         </Row>
