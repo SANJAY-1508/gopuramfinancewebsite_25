@@ -63,8 +63,7 @@ const Home = () => {
               <Col lg="7" xs={12} className="py-1 align-self-center">
                 <div data-aos="fade-right">
                   <h2 className="bold pt-3">
-                    <span className="text-primary">கோபுரம் பைனான்ஸ்</span>{" "}
-                    <br />
+                    <span className="tamil-text">கோபுரம் பைனான்ஸ்</span> <br />
                     <span className="text-secondary">
                       நகை அடகு கடைக்கு வரவேற்கிறோம்!
                     </span>

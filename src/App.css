@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "NotoSansTamil";
+  src: url("./fonts/NotoSansTamil-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tamil-text {
+  font-family: "NotoSansTamil", sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
+  color: #007bff;
+}
+
 .mark-bg {
   background-color: #ffffffc4;
   color: #08205a;
