@@ -3,6 +3,18 @@
   color: #08205a;
   font-family: "regular";
 }
+
+.text-primary {
+  color: rgb(208 204 0); /* உங்களுக்கு பிடித்த color code இங்கே மாற்றலாம் */
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.text-secondary {
+  color: #444444; /* மற்ற color code இங்கே மாற்றலாம் */
+  font-weight: 700;
+}
+
 .appbar-title {
   font-family: "Noto Sans Tamil", "Latha", "Arial", sans-serif;
   font-weight: bold;

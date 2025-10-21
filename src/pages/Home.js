@@ -41,18 +41,18 @@ const Home = () => {
         {/* <Banner/> */}
 
         {/* <intro start */}
-        <div className="padding">
-          <Container>
+        <div>
+          <Container fluid>
             <Row>
-              <Col lg="12">
+              {/* <Col lg="12">
                 <h1
                   class=" bold text-center py-5 lg-font"
                   style={{ color: "Red", fontWeight: "bolder" }}
                 >
                   கோபுரம் பைனான்ஸ் நகை அடகு கடை
                 </h1>
-              </Col>
-              <Col lg="6" className="py-5" data-aos="fade-left">
+              </Col> */}
+              <Col lg="5" className="py-5" data-aos="fade-left">
                 <img
                   src={require("../assets/home_01.jpeg")}
                   className="img-fluid"
@@ -60,17 +60,21 @@ const Home = () => {
                 />
               </Col>
 
-              <Col lg="6" xs={12} className="py-1 align-self-center">
+              <Col lg="7" xs={12} className="py-1 align-self-center">
                 <div data-aos="fade-right">
                   <h2 className="bold pt-3">
-                    கோபுரம் பைனான்ஸ் நகை அடகு கடைக்கு வரவேற்கிறோம்!
+                    <span className="text-primary">கோபுரம் பைனான்ஸ்</span>{" "}
+                    <br />
+                    <span className="text-secondary">
+                      நகை அடகு கடைக்கு வரவேற்கிறோம்!
+                    </span>
                   </h2>
 
                   <p className="regular">
                     கோபுரம் நகை அடகு கடை – உங்கள் நகைகள் **பாதுகாப்பாக
                     வைக்கப்படும் நம்பகமான இடம்**. எங்கள் கடையில் உங்கள் பாணி
                     நகைகள், பொன்வெள்ளி, மோதிரங்கள், சங்கிலிகள் மற்றும் முக்கிய
-                    நகைகளை நம்பகமாக **அடைவில் வைக்கலாம்**.
+                    நகைகளை நம்பகமாக **அடகு வைக்கலாம்**.
                   </p>
 
                   <p className="regular">
@@ -103,14 +107,14 @@ const Home = () => {
 
         {/* <intro end */}
         {/* products start */}
-        <Container className="py-5 padding">
+        {/* <Container className="py-5 padding">
           <Row className="justify-content-center">
             <Col lg="12" xs={12} className="text-center py-3">
               <h2 className="bold">எங்களின் நிபந்தனைகள்</h2>
               <ConditionSwitcher conditions={conditions} />
             </Col>
           </Row>
-        </Container>
+        </Container> */}
 
         {/* products end */}
 
