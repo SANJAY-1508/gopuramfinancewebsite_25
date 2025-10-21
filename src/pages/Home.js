@@ -65,7 +65,7 @@ const Home = () => {
                   <h2 className="bold pt-3">
                     <span className="tamil-text">கோபுரம் பைனான்ஸ்</span> <br />
                     <span className="text-secondary">
-                      நகை அடகு கடைக்கு வரவேற்கிறோம்!
+                      தங்க நகை அடகு கடைக்கு வரவேற்கிறோம்!
                     </span>
                   </h2>
 

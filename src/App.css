@@ -11,6 +11,7 @@
   font-weight: bolder;
   font-size: 40px;
   color: #007bff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .mark-bg {
