@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const AppBar = () => {
+  const navigate = useNavigate();
+
   const [rates, setRates] = useState({
     gold: { perGram: 0, perPawn: 0 },
   });
@@ -103,16 +105,22 @@ const AppBar = () => {
             className="d-flex justify-content-center justify-content-lg-end gap-2 flex-wrap"
           >
             <Card className="blink-card text-center mb-2 mb-lg-0">
-              <Card.Body className="p-2">
-                <h6 className="fw-bold ">தங்கம்</h6>
-                <p className="mb-1 price-heading">
-                  இன்றைய விற்பனை விலை (1 கிராம் )= ₹{rates.gold.perGram}
-                </p>
+              <Card
+                className="blink-card text-center mb-2 mb-lg-0"
+                style={{ cursor: "pointer" }}
+                onClick={() => navigate("/jewelrate")}
+              >
+                <Card.Body className="p-2">
+                  <h6 className="fw-bold ">தங்கம்</h6>
+                  <p className="mb-1 price-heading">
+                    இன்றைய விற்பனை விலை (1 கிராம் )= ₹{rates.gold.perGram}
+                  </p>
 
-                <p className="mb-0 price-heading">
-                  இன்றைய அடகு விலை (1 கிராம் ) = ₹{rates.gold.perPawn}
-                </p>
-              </Card.Body>
+                  <p className="mb-0 price-heading">
+                    இன்றைய அடகு விலை (1 கிராம் ) = ₹{rates.gold.perPawn}
+                  </p>
+                </Card.Body>
+              </Card>
             </Card>
           </Col>
         </Row>
