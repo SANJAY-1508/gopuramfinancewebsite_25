@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&display=swap");
+
 @font-face {
   font-family: "NotoSansTamil";
   src: url("./fonts/NotoSansTamil-Regular.ttf") format("truetype");
@@ -6,10 +8,10 @@
 }
 
 .tamil-text {
-  font-family: "NotoSansTamil", sans-serif;
-  font-style: italic;
+  font-family: "Kavivanar";
+
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 60px;
   color: #007bff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
