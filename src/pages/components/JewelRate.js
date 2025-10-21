@@ -44,9 +44,9 @@ const JewelRate = () => {
         <div data-aos="fade-up" className="box-section">
           <Container>
             <Row className="justify-content-center">
-              <Col lg={8} md={10} sm={12}>
+              <Col lg={3} md={10} sm={12}>
                 <div className="box shadow-sm">
-                  <ol className="box-list">
+                  <ul className="box-list">
                     <li className="para-text">1 பவ்ன் = 100</li>
                     <li className="para-text">1 கிராம் = 100</li>
                     <li className="para-text">22 கேரட் = 100</li>
@@ -54,7 +54,7 @@ const JewelRate = () => {
                     <li className="para-text">20 கேரட் = 100</li>
                     <li className="para-text">19 கேரட் = 100</li>
                     <li className="para-text">18 கேரட் = 100</li>
-                  </ol>
+                  </ul>
                 </div>
               </Col>
             </Row>
