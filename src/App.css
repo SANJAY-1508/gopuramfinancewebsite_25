@@ -98,7 +98,8 @@
 
 .custom-nav-link.active {
   color: white !important;
-  background-color: #ff0707 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #ecc203 !important;
   font-weight: 600 !important;
 }
 
