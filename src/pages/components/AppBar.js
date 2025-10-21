@@ -117,7 +117,7 @@ const AppBar = () => {
                   </p>
 
                   <p className="mb-0 price-heading">
-                    இன்றைய அடகு விலை (1 கிராம் ) = ₹{rates.gold.perPawn}
+                    இன்றைய விற்பனை விலை (1 பவ்ன்) = ₹{rates.gold.perPawn}
                   </p>
                 </Card.Body>
               </Card>
