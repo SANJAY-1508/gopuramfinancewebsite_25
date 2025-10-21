@@ -141,33 +141,44 @@ const AppBar = () => {
       <Container fluid className="nav-container py-1">
         <Row>
           <Col xs={12} className="text-center">
-            <Navbar expand="lg" className="justify-content-center">
-              <Nav className="custom-nav d-flex justify-content-center gap-3">
-                <Nav.Link
-                  className="custom-nav-link"
-                  as={NavLink}
-                  exact
-                  to={"/"}
-                >
-                  முகப்பு
-                </Nav.Link>
-                <Nav.Link
-                  className="custom-nav-link"
-                  as={NavLink}
-                  exact
-                  to={"/about"}
-                >
-                  எங்களை பற்றி
-                </Nav.Link>
-                <Nav.Link
-                  className="custom-nav-link"
-                  as={NavLink}
-                  exact
-                  to={"/ReasonsforPawning"}
-                >
-                  அடகு வைப்பதற்கான காரணிகள்
-                </Nav.Link>
-              </Nav>
+            <Navbar expand="lg" className="p-0">
+              <div className="d-lg-none d-flex justify-content-center w-100 mb-2">
+                <Navbar.Toggle
+                  aria-controls="basic-navbar-nav"
+                  className="mobile-menu-toggle"
+                />
+              </div>
+              <Navbar.Collapse
+                id="basic-navbar-nav"
+                className="justify-content-center"
+              >
+                <Nav className="custom-nav d-flex justify-content-center gap-3 flex-column flex-lg-row">
+                  <Nav.Link
+                    className="custom-nav-link"
+                    as={NavLink}
+                    exact
+                    to={"/"}
+                  >
+                    முகப்பு
+                  </Nav.Link>
+                  <Nav.Link
+                    className="custom-nav-link"
+                    as={NavLink}
+                    exact
+                    to={"/about"}
+                  >
+                    எங்களை பற்றி
+                  </Nav.Link>
+                  <Nav.Link
+                    className="custom-nav-link"
+                    as={NavLink}
+                    exact
+                    to={"/ReasonsforPawning"}
+                  >
+                    அடகு வைப்பதற்கான காரணிகள்
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
             </Navbar>
           </Col>
         </Row>
