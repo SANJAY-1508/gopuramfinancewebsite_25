@@ -144,6 +144,15 @@ const AppBar = () => {
             <Nav className="d-flex justify-content-center gap-4">
               <Nav.Link
                 as={NavLink}
+                to="/"
+                className={({ isActive }) =>
+                  `custom-nav-link ${isActive ? "active" : ""}`
+                }
+              >
+                முகப்பு
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
                 to="/about"
                 className={({ isActive }) =>
                   `custom-nav-link ${isActive ? "active" : ""}`
