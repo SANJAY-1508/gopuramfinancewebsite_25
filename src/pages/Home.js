@@ -56,12 +56,12 @@ const Home = () => {
             </Row>
           </Container>
         </div>
-        <div data-aos="fade-up" className="reason-box-section">
+        <div data-aos="fade-up" className="box-section">
           <Container>
             <Row className="justify-content-center">
               <Col lg={8} md={10} sm={12}>
-                <div className="reason-box shadow-sm">
-                  <ol className="reason-list">
+                <div className="box shadow-sm">
+                  <ol className="box-list">
                     <li className="para-text">
                       எங்களிடம் தங்கம் இன்றைய கிராம் விலைக்கு பெறப்படும்
                     </li>

@@ -41,12 +41,12 @@ const ReasonForPawning = () => {
             </Row>
           </Container>
         </div>
-        <div data-aos="fade-up" className="reason-box-section">
+        <div data-aos="fade-up" className="box-section">
           <Container>
             <Row className="justify-content-center">
               <Col lg={8} md={10} sm={12}>
-                <div className="reason-box shadow-sm">
-                  <ol className="reason-list">
+                <div className="box shadow-sm">
+                  <ol className="box-list">
                     <li className="para-text">
                       இன்றைய கிராம் விலைக்கு நீங்கள் அடகு வைக்கலாம்{" "}
                     </li>

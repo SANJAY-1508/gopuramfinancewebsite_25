@@ -41,12 +41,12 @@ const About = () => {
             </Row>
           </Container>
         </div>
-        <div data-aos="fade-up" className="reason-box-section">
+        <div data-aos="fade-up" className="box-section">
           <Container>
             <Row className="justify-content-center">
               <Col lg={8} md={10} sm={12}>
-                <div className="reason-box shadow-sm">
-                  <ol className="reason-list">
+                <div className="box shadow-sm">
+                  <ol className="box-list">
                     <li className="para-text">
                       நம்முடைய நிறுவனம் கடந்த 7 ஆண்டுகளாக செயல்பட்டு வருகிறது{" "}
                     </li>
