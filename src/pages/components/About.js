@@ -33,7 +33,7 @@ const About = () => {
             <Row>
               <Col lg="12" xs={12} className="py-1 align-self-center">
                 <div data-aos="fade-right">
-                  <h2 className="bold pt-3 text-center tamil-text">
+                  <h2 className="bold pt-3 text-center head-text">
                     எங்களை பற்றிய விவரங்கள்
                   </h2>
                 </div>
@@ -47,7 +47,7 @@ const About = () => {
               <Col lg={8} md={10} sm={12}>
                 <div className="reason-box shadow-sm">
                   <ol className="reason-list">
-                    <li>
+                    <li className="para-text">
                       நம்முடைய நிறுவனம் கடந்த 7 ஆண்டுகளாக செயல்பட்டு வருகிறது{" "}
                     </li>
                   </ol>
