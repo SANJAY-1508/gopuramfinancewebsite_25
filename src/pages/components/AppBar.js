@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Nav } from "react-bootstrap";
+import { Container, Row, Col, Card, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 const AppBar = () => {
@@ -82,7 +82,7 @@ const AppBar = () => {
   }
 
   return (
-    <div className="mark-bg py-2">
+    <div className="mark-bg">
       {/* Top Row: Logo, Heading, Prices */}
       <Container fluid>
         <Row className="align-items-center">
@@ -139,37 +139,36 @@ const AppBar = () => {
 
       {/* Bottom Container: NavLinks */}
       <Container fluid className="nav-container py-1">
-        <Row className="justify-content-center">
+        <Row>
           <Col xs={12} className="text-center">
-            <Nav className="d-flex justify-content-center gap-4">
-              <Nav.Link
-                as={NavLink}
-                to="/"
-                className={({ isActive }) =>
-                  `custom-nav-link ${isActive ? "active" : ""}`
-                }
-              >
-                முகப்பு
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/about"
-                className={({ isActive }) =>
-                  `custom-nav-link ${isActive ? "active" : ""}`
-                }
-              >
-                எங்களை பற்றி
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/ReasonsforPawning  "
-                className={({ isActive }) =>
-                  `custom-nav-link ${isActive ? "active" : ""}`
-                }
-              >
-                அடகு வைப்பதற்கான காரணிகள்
-              </Nav.Link>
-            </Nav>
+            <Navbar expand="lg" className="justify-content-center">
+              <Nav className="custom-nav d-flex justify-content-center gap-3">
+                <Nav.Link
+                  className="custom-nav-link"
+                  as={NavLink}
+                  exact
+                  to={"/"}
+                >
+                  முகப்பு
+                </Nav.Link>
+                <Nav.Link
+                  className="custom-nav-link"
+                  as={NavLink}
+                  exact
+                  to={"/about"}
+                >
+                  எங்களை பற்றி
+                </Nav.Link>
+                <Nav.Link
+                  className="custom-nav-link"
+                  as={NavLink}
+                  exact
+                  to={"/ReasonsforPawning"}
+                >
+                  அடகு வைப்பதற்கான காரணிகள்
+                </Nav.Link>
+              </Nav>
+            </Navbar>
           </Col>
         </Row>
       </Container>
