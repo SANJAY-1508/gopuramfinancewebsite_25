@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/components/About";
 import ReasonForPawning from "./pages/components/ReasonsForPawning";
+import JewelRate from "./pages/components/JewelRate";
 import { ToastContainer } from "react-toastify";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/ReasonsforPawning" element={<ReasonForPawning />} />
+          <Route path="/jewelrate" element={<JewelRate />} />
         </Routes>
       </BrowserRouter>
     </div>
