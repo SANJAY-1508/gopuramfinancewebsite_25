@@ -47,7 +47,7 @@
 .blink-card {
   border: none;
   border-radius: 10px;
-  animation: blink-bg 2s infinite alternate;
+  animation: blink-bg 3s infinite alternate;
   color: #000;
   min-width: 180px;
 }

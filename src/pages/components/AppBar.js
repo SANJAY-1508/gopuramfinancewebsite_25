@@ -116,7 +116,7 @@ const AppBar = () => {
           >
             <Card className="blink-card text-center mb-2 mb-lg-0">
               <Card.Body className="p-2">
-                <h6 className="fw-bold text-dark">தங்கம்</h6>
+                <h6 className="fw-bold ">தங்கம்</h6>
                 <p className="mb-1 price-heading">
                   இன்றைய விற்பனை விலை (1 கிராம் )= ₹{rates.gold.perGram}
                 </p>
