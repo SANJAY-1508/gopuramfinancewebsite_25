@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const AppBar = () => {
   const [rates, setRates] = useState({
@@ -82,6 +83,7 @@ const AppBar = () => {
 
   return (
     <div className="mark-bg py-2">
+      {/* Top Row: Logo, Heading, Prices */}
       <Container fluid>
         <Row className="align-items-center">
           {/* Logo */}
@@ -93,9 +95,8 @@ const AppBar = () => {
           >
             <img
               src={require("../../assets/logo.jpeg")}
-              className="img-fluid gpay"
+              className="img-fluid logo-img"
               alt="Logo"
-              style={{ maxHeight: "60px" }}
             />
           </Col>
 
@@ -132,6 +133,34 @@ const AppBar = () => {
                 <p className="mb-0">1kg = ₹{rates.silver.perKg}</p>
               </Card.Body>
             </Card> */}
+          </Col>
+        </Row>
+      </Container>
+
+      {/* Bottom Container: NavLinks */}
+      <Container fluid className="nav-container py-1">
+        <Row className="justify-content-center">
+          <Col xs={12} className="text-center">
+            <Nav className="d-flex justify-content-center gap-4">
+              <Nav.Link
+                as={NavLink}
+                to="/about"
+                className={({ isActive }) =>
+                  `custom-nav-link ${isActive ? "active" : ""}`
+                }
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                as={NavLink}
+                to="/price"
+                className={({ isActive }) =>
+                  `custom-nav-link ${isActive ? "active" : ""}`
+                }
+              >
+                Price
+              </Nav.Link>
+            </Nav>
           </Col>
         </Row>
       </Container>

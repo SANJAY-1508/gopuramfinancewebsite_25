@@ -3,18 +3,20 @@
   color: #08205a;
   font-family: "regular";
 }
-
+.logo-img {
+  max-height: 60px;
+}
 .price-heading {
   font-size: 10px;
 }
 .text-primary {
-  color: rgb(208 204 0); /* உங்களுக்கு பிடித்த color code இங்கே மாற்றலாம் */
+  color: rgb(208 204 0);
   font-weight: bolder;
   font-size: 4rem;
 }
 
 .text-secondary {
-  color: #444444; /* மற்ற color code இங்கே மாற்றலாம் */
+  color: #444444;
   font-weight: 700;
 }
 
@@ -55,5 +57,37 @@
 @media (min-width: 577px) and (max-width: 768px) {
   .appbar-title {
     font-size: 1.3rem;
+  }
+}
+
+/* Nav Container */
+.nav-container {
+  background-color: #f8f9fa;
+}
+
+/* Custom Nav Link */
+.custom-nav-link {
+  color: #495057 !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #007bff !important;
+  background-color: #e9ecef !important;
+  border-radius: 0.25rem;
+}
+
+.custom-nav-link.active {
+  color: #007bff !important;
+  background-color: #e9ecef !important;
+  border-radius: 0.25rem;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 768px) {
+  .nav-container .gap-4 {
+    gap: 1rem !important;
   }
 }
