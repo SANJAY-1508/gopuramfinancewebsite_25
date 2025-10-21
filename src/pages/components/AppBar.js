@@ -149,16 +149,16 @@ const AppBar = () => {
                   `custom-nav-link ${isActive ? "active" : ""}`
                 }
               >
-                About
+                எங்களை பற்றி
               </Nav.Link>
               <Nav.Link
                 as={NavLink}
-                to="/price"
+                to="/ReasonsforPawning  "
                 className={({ isActive }) =>
                   `custom-nav-link ${isActive ? "active" : ""}`
                 }
               >
-                Price
+                அடகு வைப்பதற்கான காரணிகள்
               </Nav.Link>
             </Nav>
           </Col>
