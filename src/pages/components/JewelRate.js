@@ -9,6 +9,7 @@ const JewelRate = () => {
   const [rates, setRates] = useState({
     perGram24k: 0,
     perPawn24k: 0,
+    perGram23k: 0,
     perGram22k: 0,
     perGram21k: 0,
     perGram20k: 0,
@@ -50,6 +51,7 @@ const JewelRate = () => {
 
           // Calculate for different carats (assuming per gram prices)
           const fractions = {
+            "23k": 23 / 24,
             "22k": 22 / 24,
             "21k": 21 / 24,
             "20k": 20 / 24,
@@ -60,6 +62,9 @@ const JewelRate = () => {
           const calculatedRates = {
             perGram24k: goldPerGram24k,
             perPawn24k: goldPerPawn24k,
+            perGram23k: (parseFloat(goldPerGram24k) * fractions["23k"]).toFixed(
+              2
+            ),
             perGram22k: (parseFloat(goldPerGram24k) * fractions["22k"]).toFixed(
               2
             ),
@@ -89,6 +94,7 @@ const JewelRate = () => {
         const fallbackRates = {
           perGram24k: fallbackPerGram24k.toFixed(2),
           perPawn24k: fallbackPerPawn24k,
+          perGram23k: ((fallbackPerGram24k * 23) / 24).toFixed(2),
           perGram22k: ((fallbackPerGram24k * 22) / 24).toFixed(2),
           perGram21k: ((fallbackPerGram24k * 21) / 24).toFixed(2),
           perGram20k: ((fallbackPerGram24k * 20) / 24).toFixed(2),
@@ -156,6 +162,12 @@ const JewelRate = () => {
                     </li>
                     <li className="para-text">
                       1 கிராம் (24k) = ₹{rates.perGram24k}
+                    </li>
+                    <li className="para-text">
+                      24 கேரட் (1 கிராம்) = ₹{rates.perGram24k}
+                    </li>
+                    <li className="para-text">
+                      23 கேரட் (1 கிராம்) = ₹{rates.perGram23k}
                     </li>
                     <li className="para-text">
                       22 கேரட் (1 கிராம்) = ₹{rates.perGram22k}

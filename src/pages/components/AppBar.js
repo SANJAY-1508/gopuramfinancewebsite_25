@@ -109,12 +109,12 @@ const AppBar = () => {
               onClick={() => navigate("/jewelrate")}
             >
               <Card.Body className="p-2">
-                <h6 className="fw-bold">தங்கம்</h6>
+                <h6 className="fw-bold"> இன்றைய தங்கத்தின் விலை விவரங்கள்</h6>
                 <p className="mb-1 price-heading">
                   இன்றைய விற்பனை விலை (1 கிராம்) = ₹{rates.gold.perGram}
                 </p>
                 <p className="mb-0 price-heading">
-                  இன்றைய விற்பனை விலை (1 பவ்ன்) = ₹{rates.gold.perPawn}
+                  இன்றைய அடகு விலை (1 கிராம்) = ₹{rates.gold.perGram}
                 </p>
               </Card.Body>
             </Card>
