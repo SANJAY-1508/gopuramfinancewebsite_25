@@ -4,6 +4,9 @@
   font-family: "regular";
 }
 
+.price-heading {
+  font-size: 10px;
+}
 .text-primary {
   color: rgb(208 204 0); /* உங்களுக்கு பிடித்த color code இங்கே மாற்றலாம் */
   font-weight: bolder;
@@ -18,7 +21,7 @@
 .appbar-title {
   font-family: "Noto Sans Tamil", "Latha", "Arial", sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #ffcc00;
   text-shadow: 1px 1px 4px #000;
 }
