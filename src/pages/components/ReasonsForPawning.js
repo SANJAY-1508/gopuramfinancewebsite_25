@@ -33,7 +33,7 @@ const ReasonForPawning = () => {
             <Row>
               <Col lg="12" xs={12} className="py-1 align-self-center">
                 <div data-aos="fade-right">
-                  <h2 className="bold pt-3 text-center">
+                  <h2 className="bold pt-3 text-center tamil-text">
                     அடகு வைப்பதற்கான முக்கிய காரணிகள்
                   </h2>
                 </div>
