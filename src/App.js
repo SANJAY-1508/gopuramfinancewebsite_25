@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
       <BrowserRouter basename="/gopuramfinancewebsite">
         <ToastContainer />
         <Routes>
