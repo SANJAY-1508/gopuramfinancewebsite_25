@@ -117,6 +117,21 @@
 }
 
 @media (max-width: 768px) {
+  .head-text {
+    font-family: "Anek Tamil";
+    font-weight: bolder;
+    font-size: 40px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .head-text-2 {
+    font-family: "Anek Tamil";
+    font-weight: bolder;
+    font-size: 20px;
+    color: #d5850c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
   .nav-container .gap-4 {
     gap: 1rem !important;
   }
